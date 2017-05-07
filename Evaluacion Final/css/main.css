@@ -62,6 +62,20 @@
     border: 1px solid black;
     box-shadow: 0 0 2px #02010a;
   }
+  .gallery{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .image{
+    width: 33.3%;
+  }
+  .image:nth-child(1) img{filter: blur(10px);}
+  .image:nth-child(2n+2) img{filter: grayscale(100%);}
+  .image:nth-child(3) img{filter: sepia(90%);}
+  .image img{
+    width: 80%;
+    margin: 1em 10%;
+  }
   footer{
     border-radius: 0 0 10px 10px;
     background-color: #C6d5c5;
@@ -85,4 +99,7 @@
     width: 20px;
     margin-right: 5px;
   }
+
+
+
 }
